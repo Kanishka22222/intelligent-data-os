@@ -12,28 +12,28 @@
 
 ```mermaid
 graph TD
-    User([User / BI Analyst / Business Leader]) -->|Web Studio / Voice / NLP| UI[DataOS Glassmorphism Web Studio]
+    User(["User / BI Analyst / Business Leader"]) -->|Web Studio / Voice / NLP| UI["DataOS Glassmorphism Web Studio"]
     
-    subgraph Frontend [Modern Frontend UI Layer]
-        UI --> NLQ[NLP & Multi-Lingual Voice Assistant]
-        UI --> Canvas[Visual Drag-and-Drop Workflow Canvas]
-        UI --> Dashboards[Interactive Dashboards & Metric Cards]
-        UI --> BrainView[AI Business Brain & Strategy Playbooks]
-        UI --> SecView[Security, Compliance & Audit Center]
-        UI --> BillingView[Pricing, Plans & Payment Gateway]
+    subgraph FrontendLayer ["Modern Frontend UI Layer"]
+        UI --> NLQ["NLP & Multi-Lingual Voice Assistant"]
+        UI --> Canvas["Visual Drag-and-Drop Workflow Canvas"]
+        UI --> Dashboards["Interactive Dashboards & Metric Cards"]
+        UI --> BrainView["AI Business Brain & Strategy Playbooks"]
+        UI --> SecView["Security, Compliance & Audit Center"]
+        UI --> BillingView["Pricing, Plans & Payment Gateway"]
     end
 
-    subgraph Backend [FastAPI & Python Core Engine]
-        API[FastAPI Gateway & REST/WebSocket Endpoints]
+    subgraph BackendLayer ["FastAPI & Python Core Engine"]
+        API["FastAPI Gateway & REST/WebSocket Endpoints"]
         
-        API --> IngestionEngine[1. Data Ingestion & Connector Hub]
-        API --> ETLEngine[2. Auto-Clean & Transformation Engine]
-        API --> StorageEngine[3. Storage, Catalog & Lineage Manager]
-        API --> AnalyticsEngine[4. Query Engine & Chart Generator]
-        API --> AIBrain[5. Predictive AI & Business Strategy Brain]
-        API --> SelfLearning[6. Self-Learning Knowledge RAG & Memory]
-        API --> SecEngine[7. Security, Masking & DPDP/GDPR Compliance]
-        API --> BillingEngine[8. Subscription & Stripe/Razorpay Engine]
+        API --> IngestionEngine["1. Data Ingestion & Connector Hub"]
+        API --> ETLEngine["2. Auto-Clean & Transformation Engine"]
+        API --> StorageEngine["3. Storage, Catalog & Lineage Manager"]
+        API --> AnalyticsEngine["4. Query Engine & Chart Generator"]
+        API --> AIBrain["5. Predictive AI & Business Strategy Brain"]
+        API --> SelfLearning["6. Self-Learning Knowledge RAG & Memory"]
+        API --> SecEngine["7. Security, Masking & DPDP/GDPR Compliance"]
+        API --> BillingEngine["8. Subscription & Stripe/Razorpay Engine"]
     end
 
     IngestionEngine -->|Raw Data| StorageEngine
