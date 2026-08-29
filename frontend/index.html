@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataOS - Enterprise Autonomous Big Data & Analytics Platform</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#090d16',
+                        darkpanel: '#0f172a',
+                        brand: '#4f46e5',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="bg-darkbg text-slate-100 min-h-screen flex flex-col antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+    <!-- Top Header Bar -->
+    <header class="h-16 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl px-6 flex items-center justify-between sticky top-0 z-40">
+        <!-- Logo & Workspace Title -->
+        <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 to-cyan-500 flex items-center justify-center shadow-lg shadow-indigo-500/20">
+                <i data-lucide="layers" class="w-5 h-5 text-white"></i>
+            </div>
+            <div>
+                <div class="flex items-center gap-2">
+                    <span class="font-extrabold text-base tracking-tight text-white">DataOS Platform</span>
+                    <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-bold uppercase tracking-wider">Production v2.5</span>
+                </div>
+                <div class="text-[11px] text-slate-400">Autonomous Data Operating System</div>
+            </div>
+        </div>
+
+        <!-- Live IoT Telemetry Ticker -->
+        <div id="telemetry-stream-ticker" class="hidden lg:flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-white/10">
+            <span class="pulse-dot"></span>
+            <span class="text-xs font-mono text-cyan-300">CNC-ROBOT-01: 68.4°C | 120.5 PSI (OPTIMAL)</span>
+        </div>
+
+        <!-- Global Controls & Dataset Switcher -->
+        <div class="flex items-center gap-3">
+            <!-- Upload Dataset Button -->
+            <button onclick="document.getElementById('upload-modal').classList.remove('hidden')" class="btn-secondary text-xs">
+                <i data-lucide="upload" class="w-3.5 h-3.5 text-cyan-400"></i> Upload Data
+            </button>
+
+            <!-- Dataset Selector Dropdown -->
+            <div class="flex items-center gap-2 bg-slate-900 border border-white/10 px-3 py-1.5 rounded-xl">
+                <i data-lucide="database" class="w-3.5 h-3.5 text-indigo-400"></i>
+                <select id="global-dataset-select" class="bg-transparent text-xs text-slate-200 font-medium focus:outline-none cursor-pointer">
+                    <option value="ecommerce_sales">ecommerce_sales</option>
+                    <option value="indian_financial_gst">indian_financial_gst</option>
+                    <option value="customer_churn">customer_churn</option>
+                </select>
+            </div>
+
+            <!-- User Badge -->
+            <div class="flex items-center gap-2.5 pl-2 border-l border-white/10">
+                <div class="w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center font-bold text-xs text-white">
+                    KA
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Workspace Layout -->
+    <div class="flex-1 flex overflow-hidden">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="w-60 border-r border-white/10 bg-slate-950/40 p-3.5 flex flex-col justify-between hidden md:flex">
+            <div class="space-y-1">
+                <div class="text-[11px] font-bold uppercase tracking-wider text-slate-500 px-3 py-1">Platform Modules</div>
+                <div class="nav-item active" data-tab="dashboards">
+                    <i data-lucide="layout-dashboard" class="w-4 h-4 text-indigo-400"></i> Auto-Dashboards
+                </div>
+                <div class="nav-item" data-tab="nlq">
+                    <i data-lucide="message-square" class="w-4 h-4 text-cyan-400"></i> AI Copilot (NLQ)
+                </div>
+                <div class="nav-item" data-tab="canvas">
+                    <i data-lucide="workflow" class="w-4 h-4 text-amber-400"></i> Visual ETL Studio
+                </div>
+                <div class="nav-item" data-tab="brain">
+                    <i data-lucide="brain-circuit" class="w-4 h-4 text-emerald-400"></i> Business Brain
+                </div>
+                
+                <div class="text-[11px] font-bold uppercase tracking-wider text-slate-500 px-3 pt-4 py-1">Governance & Scale</div>
+                <div class="nav-item" data-tab="security">
+                    <i data-lucide="shield-check" class="w-4 h-4 text-rose-400"></i> Security & DPDP
+                </div>
+                <div class="nav-item" data-tab="billing">
+                    <i data-lucide="credit-card" class="w-4 h-4 text-purple-400"></i> Plans & Gateway
+                </div>
+            </div>
+
+            <!-- Self-Learning Status Card -->
+            <div class="card p-3.5 border-indigo-500/20 bg-indigo-950/10">
+                <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold text-indigo-300 flex items-center gap-1.5">
+                        <i data-lucide="zap" class="w-3.5 h-3.5 text-amber-400"></i> Self-Learning
+                    </span>
+                    <span class="text-[10px] font-mono text-emerald-400 font-semibold">Active</span>
+                </div>
+                <div id="billing-quota-indicator">
+                    <div class="text-xs text-slate-400">Monthly Quota: <strong class="text-white">18 / 100</strong></div>
+                    <div class="w-full bg-slate-800 rounded-full h-1.5 mt-1.5 overflow-hidden">
+                        <div class="bg-indigo-500 h-1.5 rounded-full" style="width: 18%;"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="flex-1 overflow-y-auto p-6 lg:p-8">
+            
+            <!-- 1. Auto-Dashboards Tab Pane -->
+            <div id="pane-dashboards" class="tab-pane">
+                <div id="dashboard-content"></div>
+            </div>
+
+            <!-- 2. Conversational NLQ Tab Pane -->
+            <div id="pane-nlq" class="tab-pane hidden">
+                <div class="max-w-4xl mx-auto flex flex-col h-[calc(100vh-140px)]">
+                    <div class="flex items-center justify-between mb-3">
+                        <div>
+                            <h2 class="text-lg font-bold text-white flex items-center gap-2">
+                                <i data-lucide="bot" class="w-5 h-5 text-indigo-400"></i> Conversational AI Copilot & Voice Query
+                            </h2>
+                            <p class="text-xs text-slate-400">Ask in plain language or choose a one-click prompt chip below</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs text-slate-400">Language:</span>
+                            <select id="voice-lang-select" class="bg-slate-900 border border-white/10 text-xs rounded-lg px-2 py-1 text-slate-200">
+                                <option value="en-US">English (US)</option>
+                                <option value="en-IN">English (India)</option>
+                                <option value="hi-IN">Hindi (हिंदी)</option>
+                                <option value="es-ES">Spanish (Español)</option>
+                                <option value="fr-FR">French (Français)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Clickable Prompt Chips -->
+                    <div class="flex flex-wrap items-center gap-2 mb-3">
+                        <span class="text-xs font-semibold text-slate-400 mr-1">Suggested:</span>
+                        <button onclick="window.NLQModule.setPrompt('What is total sales by category?')" class="prompt-chip">
+                            <i data-lucide="bar-chart-2" class="w-3 h-3 text-indigo-400"></i> Top sales by category
+                        </button>
+                        <button onclick="window.NLQModule.setPrompt('Which customers have the highest risk of churn?')" class="prompt-chip">
+                            <i data-lucide="user-x" class="w-3 h-3 text-rose-400"></i> High risk churners
+                        </button>
+                        <button onclick="window.NLQModule.setPrompt('Forecast our revenue for next 6 months')" class="prompt-chip">
+                            <i data-lucide="trending-up" class="w-3 h-3 text-emerald-400"></i> 6-Month revenue forecast
+                        </button>
+                        <button onclick="window.NLQModule.setPrompt('Show total GST liability and reverse charge invoices')" class="prompt-chip">
+                            <i data-lucide="file-check" class="w-3 h-3 text-cyan-400"></i> Total GST liability
+                        </button>
+                    </div>
+
+                    <!-- Chat Messages Box -->
+                    <div id="nlq-chat-messages" class="flex-1 overflow-y-auto pr-2 space-y-4 mb-4">
+                        <div class="flex justify-start">
+                            <div class="card p-4 rounded-2xl rounded-tl-none max-w-xl text-xs md:text-sm text-slate-200">
+                                <div class="font-semibold text-indigo-300 mb-1 flex items-center gap-1.5">
+                                    <i data-lucide="sparkles" class="w-4 h-4 text-cyan-400"></i> DataOS Cognitive Copilot
+                                </div>
+                                <p class="text-slate-300 leading-relaxed">
+                                    I am your autonomous data analyst. Click any suggestion chip above, speak via microphone, or ask custom analytical questions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Input Bar -->
+                    <div class="card p-2 flex items-center gap-2 border-indigo-500/30">
+                        <button id="nlq-mic-btn" onclick="window.NLQModule.toggleVoice()" class="p-2.5 rounded-xl hover:bg-white/10 text-slate-400 transition" title="Voice Input">
+                            <i data-lucide="mic" class="w-5 h-5"></i>
+                        </button>
+                        <input id="nlq-input-field" type="text" placeholder="Ask anything in English or Hindi (e.g. 'Show profit margin by region')..." class="flex-1 bg-transparent px-3 py-2 text-sm text-white placeholder-slate-500 focus:outline-none font-medium">
+                        <button onclick="window.NLQModule.sendQuery()" class="btn-primary">
+                            <i data-lucide="send" class="w-4 h-4"></i> Ask
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Visual Workflow Canvas Tab Pane -->
+            <div id="pane-canvas" class="tab-pane hidden">
+                <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+                    <div>
+                        <h2 class="text-lg font-bold text-white flex items-center gap-2">
+                            <i data-lucide="workflow" class="w-5 h-5 text-indigo-400"></i> Visual Drag & Drop ETL Studio
+                        </h2>
+                        <p class="text-xs text-slate-400">Assemble data transformation workflows visually and execute live DAG pipelines</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <button onclick="window.CanvasModule.runPipeline()" class="btn-primary text-xs">
+                            <i data-lucide="play" class="w-3.5 h-3.5 text-white"></i> Execute Live Pipeline
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Template Selector & Node Palette -->
+                <div class="flex flex-wrap items-center justify-between gap-3 mb-4 p-3 card bg-slate-950/40">
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs font-semibold text-slate-400">Templates:</span>
+                        <button onclick="window.CanvasModule.loadTemplate('ecommerce')" class="prompt-chip">
+                            🚀 E-Commerce Margin Flow
+                        </button>
+                        <button onclick="window.CanvasModule.loadTemplate('gst')" class="prompt-chip">
+                            ⚖️ GST Tax Audit Flow
+                        </button>
+                        <button onclick="window.CanvasModule.loadTemplate('churn')" class="prompt-chip">
+                            🎯 Churn Prevention Flow
+                        </button>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <span class="text-xs font-semibold text-slate-400 mr-1">+ Add Node:</span>
+                        <button onclick="window.CanvasModule.addNode('filter')" class="btn-secondary text-[11px] py-1 px-2.5">+ Filter</button>
+                        <button onclick="window.CanvasModule.addNode('aggregate')" class="btn-secondary text-[11px] py-1 px-2.5">+ Aggregate</button>
+                        <button onclick="window.CanvasModule.addNode('mutate')" class="btn-secondary text-[11px] py-1 px-2.5">+ Calc Field</button>
+                    </div>
+                </div>
+
+                <!-- Canvas Work Area -->
+                <div id="pipeline-canvas-area" class="w-full h-80 card relative overflow-hidden mb-5 border-dashed border-indigo-500/30"></div>
+
+                <!-- Step Execution Trace Box -->
+                <div id="pipeline-trace-box" class="card min-h-[140px]">
+                    <div class="p-6 text-center text-xs text-slate-400">Click "Execute Live Pipeline" to run the visual transformation graph.</div>
+                </div>
+            </div>
+
+            <!-- 4. AI Business Brain Tab Pane -->
+            <div id="pane-brain" class="tab-pane hidden">
+                <div class="flex items-center justify-between mb-6">
+                    <div>
+                        <h2 class="text-lg font-bold text-white flex items-center gap-2">
+                            <i data-lucide="brain-circuit" class="w-5 h-5 text-indigo-400"></i> AI-Driven Business Brain
+                        </h2>
+                        <p class="text-xs text-slate-400">Predictive demand forecasting, customer churn risk matrix, and statutory growth playbooks</p>
+                    </div>
+                    <span id="forecast-growth-badge" class="text-xs font-mono px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400">
+                        +14.8% Expected Growth
+                    </span>
+                </div>
+
+                <!-- Autonomous Continual Learning & Model Training Card -->
+                <div class="card p-5 mb-5 border border-indigo-500/30 bg-gradient-to-r from-indigo-950/40 via-slate-900/60 to-purple-950/30">
+                    <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-white/10">
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-sm font-bold text-white flex items-center gap-2">
+                                    <i data-lucide="cpu" class="w-4 h-4 text-cyan-400"></i> Autonomous Continual Learning & Model Evolution
+                                </span>
+                                <span id="brain-version-tag" class="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-500/20 text-indigo-300 font-bold">v3.3-Autonomous</span>
+                            </div>
+                            <p class="text-xs text-slate-400 mt-0.5">Model continually trains on user datasets and dynamically evolves to operate as an independent standalone AI</p>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-2">
+                            <button onclick="window.BrainModule.trainActiveDataset()" id="train-brain-btn" class="btn-primary text-xs flex items-center gap-1.5 shadow-lg shadow-indigo-600/30">
+                                <i data-lucide="zap" class="w-3.5 h-3.5 text-amber-300"></i> ⚡ Train on Active Dataset
+                            </button>
+                            <button onclick="window.BrainModule.exportStandaloneModel()" class="btn-secondary text-xs flex items-center gap-1.5 border-cyan-500/30 hover:border-cyan-400">
+                                <i data-lucide="download" class="w-3.5 h-3.5 text-cyan-400"></i> 📦 Export Standalone Model (.py)
+                            </button>
+                            <button onclick="window.BrainModule.testStandaloneInference()" class="btn-secondary text-xs flex items-center gap-1.5 border-emerald-500/30 hover:border-emerald-400">
+                                <i data-lucide="play-circle" class="w-3.5 h-3.5 text-emerald-400"></i> 🧪 Test Independent Inference
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Autonomy Stats & Progress Bar -->
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
+                        <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5">
+                            <div class="text-[11px] text-slate-400 font-medium uppercase tracking-wider">Brain Autonomy Score</div>
+                            <div id="brain-autonomy-score" class="text-xl font-bold text-emerald-400 font-mono mt-1">94.1%</div>
+                            <div class="text-[10px] text-slate-400">Self-sufficient for standalone deployment</div>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5">
+                            <div class="text-[11px] text-slate-400 font-medium uppercase tracking-wider">Trained Accuracy</div>
+                            <div id="brain-accuracy-val" class="text-xl font-bold text-white font-mono mt-1">96.4%</div>
+                            <div class="text-[10px] text-slate-400">Multi-task analytical precision</div>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5">
+                            <div class="text-[11px] text-slate-400 font-medium uppercase tracking-wider">Loss (Gradient Descent)</div>
+                            <div id="brain-loss-val" class="text-xl font-bold text-cyan-400 font-mono mt-1">0.037</div>
+                            <div class="text-[10px] text-slate-400">Convergence error metric</div>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5">
+                            <div class="text-[11px] text-slate-400 font-medium uppercase tracking-wider">Datasets Absorbed</div>
+                            <div id="brain-datasets-count" class="text-xl font-bold text-indigo-300 font-mono mt-1">5 Datasets (2,990 Samples)</div>
+                            <div class="text-[10px] text-slate-400">Knowledge catalog expansion</div>
+                        </div>
+                    </div>
+
+                    <!-- Autonomy Readiness Bar -->
+                    <div class="w-full bg-slate-900 rounded-full h-2 overflow-hidden mb-2 border border-white/10">
+                        <div id="brain-autonomy-bar" class="bg-gradient-to-r from-indigo-500 via-cyan-400 to-emerald-400 h-2 rounded-full transition-all duration-700" style="width: 94.1%;"></div>
+                    </div>
+                    <div class="flex items-center justify-between text-[11px] text-slate-400 font-mono">
+                        <span>Baseline Initialization (0%)</span>
+                        <span class="text-indigo-300 font-semibold">Continuous Online Evolution Active</span>
+                        <span class="text-emerald-400 font-bold">100% Fully Independent Model</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-5">
+                    <!-- Forecast Card -->
+                    <div class="card p-5">
+                        <h3 class="text-sm font-bold text-white mb-3 flex items-center gap-2">
+                            <i data-lucide="trending-up" class="w-4 h-4 text-emerald-400"></i> Time-Series Predictive Demand Forecast
+                        </h3>
+                        <div class="h-60 relative">
+                            <canvas id="forecast-chart-canvas"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Customer Churn & Cohort Intelligence -->
+                    <div class="card p-5">
+                        <h3 class="text-sm font-bold text-white mb-3 flex items-center gap-2">
+                            <i data-lucide="users" class="w-4 h-4 text-indigo-400"></i> Customer Retention & RFM Cohorts
+                        </h3>
+                        <div id="customer-segments-container"></div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                    <!-- Statistical Anomaly Feed -->
+                    <div class="card p-5">
+                        <h3 class="text-sm font-bold text-white mb-3 flex items-center gap-2">
+                            <i data-lucide="alert-octagon" class="w-4 h-4 text-rose-400"></i> Automated Operational Anomaly Alerts
+                        </h3>
+                        <div id="anomaly-alerts-container" class="space-y-2"></div>
+                    </div>
+
+                    <!-- Strategic Growth Playbooks -->
+                    <div class="card p-5">
+                        <h3 class="text-sm font-bold text-white mb-3 flex items-center gap-2">
+                            <i data-lucide="compass" class="w-4 h-4 text-cyan-400"></i> Sector Strategic Action Playbook
+                        </h3>
+                        <div id="strategy-playbook-container"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Security, DPDP & Audit Tab Pane -->
+            <div id="pane-security" class="tab-pane hidden">
+                <div class="flex items-center justify-between mb-6">
+                    <div>
+                        <h2 class="text-lg font-bold text-white flex items-center gap-2">
+                            <i data-lucide="shield-check" class="w-5 h-5 text-indigo-400"></i> Security, Governance & DPDP Compliance
+                        </h2>
+                        <p class="text-xs text-slate-400">Indian DPDP Act 2023, GDPR, Sensitive PII Masking, and SHA-256 Chained Audit Ledger</p>
+                    </div>
+                    <button onclick="window.SecurityModule.verifyChain()" class="btn-secondary text-xs">
+                        <i data-lucide="check-check" class="w-3.5 h-3.5 text-cyan-400"></i> Verify SHA-256 Ledger
+                    </button>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mb-5">
+                    <!-- PII Redaction Card -->
+                    <div class="card p-5 lg:col-span-1">
+                        <h3 class="text-sm font-bold text-white mb-3 flex items-center gap-2">
+                            <i data-lucide="eye-off" class="w-4 h-4 text-amber-400"></i> Sensitive PII Scanner
+                        </h3>
+                        <div id="pii-findings-container"></div>
+                    </div>
+
+                    <!-- DPDP / GDPR Scorecard -->
+                    <div class="card p-5 lg:col-span-2">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-sm font-bold text-white flex items-center gap-2">
+                                <i data-lucide="award" class="w-4 h-4 text-emerald-400"></i> DPDP Act 2023 & GDPR Compliance Scorecard
+                            </h3>
+                            <span id="compliance-score-val" class="text-base font-bold text-emerald-400 font-mono">98.0%</span>
+                        </div>
+                        <div id="compliance-checks-list"></div>
+                    </div>
+                </div>
+
+                <!-- SHA-256 Audit Ledger -->
+                <div class="card p-5">
+                    <h3 class="text-sm font-bold text-white mb-3 flex items-center gap-2">
+                        <i data-lucide="file-lock" class="w-4 h-4 text-indigo-400"></i> Cryptographically Chained Audit Ledger
+                    </h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="border-b border-white/10 text-[11px] uppercase tracking-wider text-slate-500">
+                                    <th class="p-2.5">Block</th>
+                                    <th class="p-2.5">Timestamp</th>
+                                    <th class="p-2.5">User</th>
+                                    <th class="p-2.5">Action</th>
+                                    <th class="p-2.5">Resource</th>
+                                    <th class="p-2.5">SHA-256 Hash</th>
+                                </tr>
+                            </thead>
+                            <tbody id="audit-ledger-table-body"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Plans & Billing Tab Pane -->
+            <div id="pane-billing" class="tab-pane hidden">
+                <div class="text-center max-w-2xl mx-auto mb-8">
+                    <span class="text-xs font-mono font-bold uppercase tracking-wider text-indigo-400 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20">Transparent Pricing</span>
+                    <h2 class="text-2xl font-bold text-white tracking-tight mt-3 mb-2">Empower Your Team with Autonomous Intelligence</h2>
+                    <p class="text-xs text-slate-400">Unified payment gateway supporting Razorpay (UPI, Net Banking) & Stripe (Cards) with instant GST Tax Invoices.</p>
+                </div>
+
+                <div id="billing-plans-grid" class="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl mx-auto mb-10"></div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Upload Dataset Modal -->
+    <div id="upload-modal" class="fixed inset-0 bg-black/80 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden">
+        <div class="card max-w-md w-full p-6 border-indigo-500/40 relative">
+            <button onclick="document.getElementById('upload-modal').classList.add('hidden')" class="absolute top-4 right-4 text-slate-400 hover:text-white">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <h3 class="text-base font-bold text-white mb-1">Ingest New Dataset</h3>
+            <p class="text-xs text-slate-400 mb-4">Upload your CSV, Excel, or JSON data file</p>
+            <input type="file" id="file-upload-input" accept=".csv,.json,.xlsx,.parquet" class="block w-full text-xs text-slate-400 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-semibold file:bg-indigo-600 file:text-white hover:file:bg-indigo-500 cursor-pointer border border-white/10 rounded-xl p-3 mb-4">
+            <button onclick="uploadFileHandler()" class="w-full btn-primary justify-center text-xs">
+                Upload & Ingest into Catalog
+            </button>
+        </div>
+    </div>
+
+    <!-- Razorpay / Stripe Payment Checkout Modal -->
+    <div id="payment-checkout-modal" class="fixed inset-0 bg-black/80 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden">
+        <div class="card max-w-md w-full p-6 border-indigo-500/40 relative">
+            <button onclick="window.BillingModule.closeCheckoutModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <div class="flex items-center gap-2 mb-4">
+                <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center font-bold text-white text-xs">
+                    ₹
+                </div>
+                <div>
+                    <h3 class="text-base font-bold text-white">Unified Payment Gateway</h3>
+                    <div class="text-[11px] text-slate-400 font-mono">Razorpay & Stripe Checkout Engine</div>
+                </div>
+            </div>
+            <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800 mb-4">
+                <div class="flex items-center justify-between text-xs text-slate-400 mb-1">
+                    <span>Plan:</span>
+                    <strong id="checkout-plan-name" class="text-white">Pro Data Strategist</strong>
+                </div>
+                <div class="flex items-center justify-between text-xs text-slate-400 mb-1">
+                    <span>Order Reference:</span>
+                    <strong id="checkout-order-id" class="font-mono text-cyan-400">order_dataos_xxxx</strong>
+                </div>
+                <div class="flex items-center justify-between text-sm font-bold text-white pt-2 border-t border-slate-800 mt-2">
+                    <span>Total Amount Payable:</span>
+                    <span id="checkout-amount-display" class="text-lg text-emerald-400 font-extrabold">₹2,499.00</span>
+                </div>
+            </div>
+            <div class="space-y-2 mb-4">
+                <div class="p-3 rounded-xl bg-slate-900/40 border border-slate-800">
+                    <div class="text-xs font-semibold text-white mb-1">💳 Demo Card Details:</div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <input id="card-num-input" type="text" value="4242 4242 4242 4242" class="bg-slate-950 border border-white/10 rounded px-2 py-1 text-xs text-white font-mono flex-1">
+                        <input id="card-exp-input" type="text" value="12/28" class="bg-slate-950 border border-white/10 rounded px-2 py-1 text-xs text-white font-mono w-16">
+                        <input id="card-cvv-input" type="text" value="888" class="bg-slate-950 border border-white/10 rounded px-2 py-1 text-xs text-white font-mono w-14">
+                    </div>
+                    <button onclick="window.BillingModule.fillDemoCard()" class="text-[11px] text-indigo-400 hover:text-indigo-300">
+                        ⚡ Autofill Demo Card Credentials
+                    </button>
+                </div>
+            </div>
+            <button id="checkout-pay-btn" class="w-full btn-primary justify-center text-xs py-2.5">
+                <i data-lucide="lock" class="w-3.5 h-3.5"></i> Authorize & Confirm Payment
+            </button>
+        </div>
+    </div>
+
+    <!-- GST Tax Invoice Receipt Modal -->
+    <div id="invoice-receipt-modal" class="fixed inset-0 bg-black/80 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden">
+        <div class="card max-w-md w-full p-6 border-emerald-500/40 relative">
+            <button onclick="window.BillingModule.closeInvoiceModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <div class="flex items-center gap-2 mb-4 text-emerald-400">
+                <i data-lucide="check-circle" class="w-6 h-6"></i>
+                <h3 class="text-base font-bold text-white">Payment Confirmed & Invoice Issued</h3>
+            </div>
+            <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800 mb-4 font-mono text-xs space-y-1.5">
+                <div class="flex justify-between"><span class="text-slate-400">Invoice Number:</span> <strong id="invoice-no-display" class="text-cyan-400">INV-DATAOS-xxx</strong></div>
+                <div class="flex justify-between"><span class="text-slate-400">Issue Date:</span> <span id="invoice-date-display" class="text-white">Today</span></div>
+                <div class="flex justify-between"><span class="text-slate-400">Total Paid (incl. 18% GST):</span> <strong id="invoice-total-display" class="text-emerald-400 font-bold">₹2,499.00</strong></div>
+                <div class="flex justify-between"><span class="text-slate-400">Supplier GSTIN:</span> <span class="text-slate-300">27AAACD9988P1Z3</span></div>
+            </div>
+            <div class="flex items-center gap-2">
+                <button onclick="window.print()" class="btn-secondary text-xs flex-1 justify-center">
+                    <i data-lucide="printer" class="w-3.5 h-3.5"></i> Print / Save PDF
+                </button>
+                <button onclick="window.BillingModule.closeInvoiceModal()" class="btn-primary text-xs flex-1 justify-center">
+                    Done
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/app.js?v=2.5"></script>
+    <script src="/js/dashboards.js?v=2.5"></script>
+    <script src="/js/nlq.js?v=2.5"></script>
+    <script src="/js/canvas.js?v=2.5"></script>
+    <script src="/js/brain.js?v=2.5"></script>
+    <script src="/js/security.js?v=2.5"></script>
+    <script src="/js/billing.js?v=2.5"></script>
+    <script>
+        async function uploadFileHandler() {
+            const fileInput = document.getElementById('file-upload-input');
+            if (!fileInput.files[0]) {
+                showToast('Please choose a file to upload', 'error');
+                return;
+            }
+            const formData = new FormData();
+            formData.append('file', fileInput.files[0]);
+            try {
+                showToast('Uploading and parsing dataset...', 'info');
+                const res = await fetch('/api/datasets/upload', { method: 'POST', body: formData });
+                const data = await res.json();
+                if (data.status === 'success') {
+                    showToast(`Successfully ingested: ${data.dataset.name}`, 'success');
+                    document.getElementById('upload-modal').classList.add('hidden');
+                    await loadDatasets();
+                    state.currentDataset = data.dataset.name;
+                    updateDatasetDropdown();
+                    loadCurrentTab();
+                }
+            } catch (e) {
+                showToast(`Upload failed: ${e.message}`, 'error');
+            }
+        }
+    </script>
+</body>
+</html>

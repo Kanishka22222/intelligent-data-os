@@ -1,0 +1,121 @@
+{
+  "model_version": "v3.6-Autonomous",
+  "generation": 3.6,
+  "total_epochs_trained": 193,
+  "total_datasets_learned": 8,
+  "total_samples_digested": 3440,
+  "autonomy_readiness_score": 97.2,
+  "current_loss": 0.0253,
+  "current_accuracy_pct": 97.81,
+  "loss_history": [
+    0.22,
+    0.16,
+    0.11,
+    0.08,
+    0.055,
+    0.042,
+    0.037,
+    0.0326,
+    0.0287,
+    0.0253
+  ],
+  "accuracy_history": [
+    86.0,
+    89.4,
+    91.8,
+    93.6,
+    94.9,
+    95.8,
+    96.43,
+    96.97,
+    97.42,
+    97.81
+  ],
+  "learned_dataset_catalog": [
+    {
+      "name": "ecommerce_sales",
+      "samples": 150,
+      "learned_at": "2026-08-20 10:15:00",
+      "accuracy": 96.2
+    },
+    {
+      "name": "indian_financial_gst",
+      "samples": 80,
+      "learned_at": "2026-08-21 14:22:10",
+      "accuracy": 95.1
+    },
+    {
+      "name": "customer_churn",
+      "samples": 120,
+      "learned_at": "2026-08-22 09:40:30",
+      "accuracy": 94.8
+    },
+    {
+      "name": "iot_sensor_stream",
+      "samples": 2490,
+      "learned_at": "2026-08-23 08:00:00",
+      "accuracy": 97.1
+    },
+    {
+      "name": "ecommerce_sales",
+      "samples": 150,
+      "learned_at": "2026-08-23 14:02:08",
+      "accuracy": 96.43,
+      "features_extracted": 19
+    },
+    {
+      "name": "ecommerce_sales",
+      "samples": 150,
+      "learned_at": "2026-08-23 14:03:15",
+      "accuracy": 96.97,
+      "features_extracted": 19
+    },
+    {
+      "name": "ecommerce_sales",
+      "samples": 150,
+      "learned_at": "2026-08-23 14:03:26",
+      "accuracy": 97.42,
+      "features_extracted": 19
+    },
+    {
+      "name": "ecommerce_sales",
+      "samples": 150,
+      "learned_at": "2026-08-29 14:24:19",
+      "accuracy": 97.81,
+      "features_extracted": 19
+    }
+  ],
+  "weights": {
+    "trend_slope": 1.489,
+    "volatility_decay": 0.88,
+    "churn_risk_bias": 0.42,
+    "anomaly_threshold_sigma": 2.85,
+    "domain_embeddings": {
+      "sales": [
+        0.88,
+        0.12,
+        0.45,
+        0.91
+      ],
+      "tax_gst": [
+        0.15,
+        0.94,
+        0.72,
+        0.33
+      ],
+      "churn": [
+        0.65,
+        0.22,
+        0.93,
+        0.81
+      ],
+      "iot_telemetry": [
+        0.1,
+        0.35,
+        0.28,
+        0.99
+      ]
+    }
+  },
+  "last_trained_timestamp": "2026-08-29 14:24:19"
+}

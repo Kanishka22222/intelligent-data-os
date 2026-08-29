@@ -1,0 +1,502 @@
+[
+  {
+    "timestamp": "2026-08-23T12:00:00Z",
+    "machine_id": "CNC-ROBOT-01",
+    "temperature_c": 70.6,
+    "vibration_hz": 45.2,
+    "pressure_psi": 115.7,
+    "voltage_v": 230.8,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T12:05:00Z",
+    "machine_id": "CNC-ROBOT-02",
+    "temperature_c": 67.4,
+    "vibration_hz": 38.8,
+    "pressure_psi": 119.6,
+    "voltage_v": 229.9,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T12:10:00Z",
+    "machine_id": "CNC-ROBOT-03",
+    "temperature_c": 63.7,
+    "vibration_hz": 47.5,
+    "pressure_psi": 123.5,
+    "voltage_v": 230.7,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T12:15:00Z",
+    "machine_id": "CNC-ROBOT-04",
+    "temperature_c": 66.6,
+    "vibration_hz": 42.1,
+    "pressure_psi": 121.5,
+    "voltage_v": 230.2,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T12:20:00Z",
+    "machine_id": "CNC-ROBOT-01",
+    "temperature_c": 62.6,
+    "vibration_hz": 43.1,
+    "pressure_psi": 123.1,
+    "voltage_v": 229.8,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T12:25:00Z",
+    "machine_id": "CNC-ROBOT-02",
+    "temperature_c": 62.5,
+    "vibration_hz": 45.9,
+    "pressure_psi": 117.0,
+    "voltage_v": 229.0,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T12:30:00Z",
+    "machine_id": "CNC-ROBOT-03",
+    "temperature_c": 91.6,
+    "vibration_hz": 86.3,
+    "pressure_psi": 172.6,
+    "voltage_v": 248.1,
+    "operating_status": "CRITICAL_SPIKE",
+    "anomaly_flag": 1
+  },
+  {
+    "timestamp": "2026-08-23T12:35:00Z",
+    "machine_id": "CNC-ROBOT-04",
+    "temperature_c": 64.0,
+    "vibration_hz": 46.8,
+    "pressure_psi": 123.8,
+    "voltage_v": 231.5,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T12:40:00Z",
+    "machine_id": "CNC-ROBOT-01",
+    "temperature_c": 64.4,
+    "vibration_hz": 42.5,
+    "pressure_psi": 124.8,
+    "voltage_v": 231.1,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T12:45:00Z",
+    "machine_id": "CNC-ROBOT-02",
+    "temperature_c": 62.3,
+    "vibration_hz": 38.7,
+    "pressure_psi": 119.6,
+    "voltage_v": 231.6,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T12:50:00Z",
+    "machine_id": "CNC-ROBOT-03",
+    "temperature_c": 67.4,
+    "vibration_hz": 43.0,
+    "pressure_psi": 116.1,
+    "voltage_v": 230.6,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T12:55:00Z",
+    "machine_id": "CNC-ROBOT-04",
+    "temperature_c": 70.2,
+    "vibration_hz": 41.8,
+    "pressure_psi": 122.8,
+    "voltage_v": 231.9,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T13:00:00Z",
+    "machine_id": "CNC-ROBOT-01",
+    "temperature_c": 64.0,
+    "vibration_hz": 43.2,
+    "pressure_psi": 117.9,
+    "voltage_v": 231.2,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T13:05:00Z",
+    "machine_id": "CNC-ROBOT-02",
+    "temperature_c": 67.8,
+    "vibration_hz": 44.3,
+    "pressure_psi": 123.0,
+    "voltage_v": 229.6,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T13:10:00Z",
+    "machine_id": "CNC-ROBOT-03",
+    "temperature_c": 71.2,
+    "vibration_hz": 43.3,
+    "pressure_psi": 116.6,
+    "voltage_v": 230.8,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T13:15:00Z",
+    "machine_id": "CNC-ROBOT-04",
+    "temperature_c": 97.9,
+    "vibration_hz": 86.2,
+    "pressure_psi": 173.6,
+    "voltage_v": 249.6,
+    "operating_status": "CRITICAL_SPIKE",
+    "anomaly_flag": 1
+  },
+  {
+    "timestamp": "2026-08-23T13:20:00Z",
+    "machine_id": "CNC-ROBOT-01",
+    "temperature_c": 64.8,
+    "vibration_hz": 47.8,
+    "pressure_psi": 116.4,
+    "voltage_v": 228.8,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T13:25:00Z",
+    "machine_id": "CNC-ROBOT-02",
+    "temperature_c": 63.8,
+    "vibration_hz": 46.9,
+    "pressure_psi": 121.5,
+    "voltage_v": 228.6,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T13:30:00Z",
+    "machine_id": "CNC-ROBOT-03",
+    "temperature_c": 66.4,
+    "vibration_hz": 44.2,
+    "pressure_psi": 115.8,
+    "voltage_v": 231.5,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T13:35:00Z",
+    "machine_id": "CNC-ROBOT-04",
+    "temperature_c": 70.0,
+    "vibration_hz": 43.1,
+    "pressure_psi": 124.7,
+    "voltage_v": 229.7,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T13:40:00Z",
+    "machine_id": "CNC-ROBOT-01",
+    "temperature_c": 71.8,
+    "vibration_hz": 44.7,
+    "pressure_psi": 121.3,
+    "voltage_v": 228.7,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T13:45:00Z",
+    "machine_id": "CNC-ROBOT-02",
+    "temperature_c": 70.8,
+    "vibration_hz": 42.3,
+    "pressure_psi": 116.6,
+    "voltage_v": 228.1,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T13:50:00Z",
+    "machine_id": "CNC-ROBOT-03",
+    "temperature_c": 67.6,
+    "vibration_hz": 43.3,
+    "pressure_psi": 122.2,
+    "voltage_v": 231.6,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T13:55:00Z",
+    "machine_id": "CNC-ROBOT-04",
+    "temperature_c": 62.8,
+    "vibration_hz": 45.3,
+    "pressure_psi": 116.9,
+    "voltage_v": 231.4,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T14:00:00Z",
+    "machine_id": "CNC-ROBOT-01",
+    "temperature_c": 70.2,
+    "vibration_hz": 43.4,
+    "pressure_psi": 122.1,
+    "voltage_v": 229.3,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T14:05:00Z",
+    "machine_id": "CNC-ROBOT-02",
+    "temperature_c": 66.7,
+    "vibration_hz": 46.2,
+    "pressure_psi": 119.6,
+    "voltage_v": 229.4,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T14:10:00Z",
+    "machine_id": "CNC-ROBOT-03",
+    "temperature_c": 66.9,
+    "vibration_hz": 46.3,
+    "pressure_psi": 118.4,
+    "voltage_v": 228.7,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T14:15:00Z",
+    "machine_id": "CNC-ROBOT-04",
+    "temperature_c": 97.1,
+    "vibration_hz": 91.3,
+    "pressure_psi": 166.0,
+    "voltage_v": 247.0,
+    "operating_status": "CRITICAL_SPIKE",
+    "anomaly_flag": 1
+  },
+  {
+    "timestamp": "2026-08-23T14:20:00Z",
+    "machine_id": "CNC-ROBOT-01",
+    "temperature_c": 63.4,
+    "vibration_hz": 41.5,
+    "pressure_psi": 119.5,
+    "voltage_v": 231.0,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T14:25:00Z",
+    "machine_id": "CNC-ROBOT-02",
+    "temperature_c": 68.5,
+    "vibration_hz": 44.2,
+    "pressure_psi": 118.5,
+    "voltage_v": 231.4,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T14:30:00Z",
+    "machine_id": "CNC-ROBOT-03",
+    "temperature_c": 66.7,
+    "vibration_hz": 47.8,
+    "pressure_psi": 121.3,
+    "voltage_v": 228.5,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T14:35:00Z",
+    "machine_id": "CNC-ROBOT-04",
+    "temperature_c": 68.8,
+    "vibration_hz": 41.3,
+    "pressure_psi": 121.9,
+    "voltage_v": 228.3,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T14:40:00Z",
+    "machine_id": "CNC-ROBOT-01",
+    "temperature_c": 63.7,
+    "vibration_hz": 46.6,
+    "pressure_psi": 117.3,
+    "voltage_v": 231.3,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T14:45:00Z",
+    "machine_id": "CNC-ROBOT-02",
+    "temperature_c": 64.8,
+    "vibration_hz": 44.4,
+    "pressure_psi": 121.9,
+    "voltage_v": 230.1,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T14:50:00Z",
+    "machine_id": "CNC-ROBOT-03",
+    "temperature_c": 65.1,
+    "vibration_hz": 40.1,
+    "pressure_psi": 115.3,
+    "voltage_v": 229.2,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T14:55:00Z",
+    "machine_id": "CNC-ROBOT-04",
+    "temperature_c": 68.5,
+    "vibration_hz": 47.4,
+    "pressure_psi": 123.7,
+    "voltage_v": 231.1,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T15:00:00Z",
+    "machine_id": "CNC-ROBOT-01",
+    "temperature_c": 69.9,
+    "vibration_hz": 44.6,
+    "pressure_psi": 117.6,
+    "voltage_v": 231.6,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T15:05:00Z",
+    "machine_id": "CNC-ROBOT-02",
+    "temperature_c": 68.7,
+    "vibration_hz": 43.6,
+    "pressure_psi": 116.1,
+    "voltage_v": 229.8,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T15:10:00Z",
+    "machine_id": "CNC-ROBOT-03",
+    "temperature_c": 66.6,
+    "vibration_hz": 46.6,
+    "pressure_psi": 120.5,
+    "voltage_v": 229.5,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T15:15:00Z",
+    "machine_id": "CNC-ROBOT-04",
+    "temperature_c": 71.8,
+    "vibration_hz": 39.1,
+    "pressure_psi": 119.2,
+    "voltage_v": 228.2,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T15:20:00Z",
+    "machine_id": "CNC-ROBOT-01",
+    "temperature_c": 69.4,
+    "vibration_hz": 47.2,
+    "pressure_psi": 117.8,
+    "voltage_v": 231.4,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T15:25:00Z",
+    "machine_id": "CNC-ROBOT-02",
+    "temperature_c": 92.9,
+    "vibration_hz": 92.1,
+    "pressure_psi": 172.5,
+    "voltage_v": 249.2,
+    "operating_status": "CRITICAL_SPIKE",
+    "anomaly_flag": 1
+  },
+  {
+    "timestamp": "2026-08-23T15:30:00Z",
+    "machine_id": "CNC-ROBOT-03",
+    "temperature_c": 62.2,
+    "vibration_hz": 47.6,
+    "pressure_psi": 122.3,
+    "voltage_v": 229.2,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T15:35:00Z",
+    "machine_id": "CNC-ROBOT-04",
+    "temperature_c": 70.3,
+    "vibration_hz": 40.8,
+    "pressure_psi": 123.7,
+    "voltage_v": 228.5,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T15:40:00Z",
+    "machine_id": "CNC-ROBOT-01",
+    "temperature_c": 69.0,
+    "vibration_hz": 43.4,
+    "pressure_psi": 116.0,
+    "voltage_v": 229.0,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T15:45:00Z",
+    "machine_id": "CNC-ROBOT-02",
+    "temperature_c": 62.1,
+    "vibration_hz": 42.7,
+    "pressure_psi": 118.0,
+    "voltage_v": 230.4,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T15:50:00Z",
+    "machine_id": "CNC-ROBOT-03",
+    "temperature_c": 65.0,
+    "vibration_hz": 41.0,
+    "pressure_psi": 122.4,
+    "voltage_v": 228.2,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T15:55:00Z",
+    "machine_id": "CNC-ROBOT-04",
+    "temperature_c": 71.0,
+    "vibration_hz": 46.5,
+    "pressure_psi": 121.7,
+    "voltage_v": 230.4,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T16:00:00Z",
+    "machine_id": "CNC-ROBOT-01",
+    "temperature_c": 70.9,
+    "vibration_hz": 39.9,
+    "pressure_psi": 115.8,
+    "voltage_v": 229.0,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  },
+  {
+    "timestamp": "2026-08-23T16:05:00Z",
+    "machine_id": "CNC-ROBOT-02",
+    "temperature_c": 69.9,
+    "vibration_hz": 38.3,
+    "pressure_psi": 120.8,
+    "voltage_v": 232.0,
+    "operating_status": "NORMAL",
+    "anomaly_flag": 0
+  }
+]

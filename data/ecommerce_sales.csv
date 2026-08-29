@@ -1,0 +1,151 @@
+Order_ID,Order_Date,Customer_ID,Customer_Name,Customer_Email,Segment,Country,City,State,Region,Category,Sub_Category,Product_Name,Sales,Quantity,Discount,Profit,Payment_Mode,Shipping_Cost
+ORD-2025-1000,2025-01-01,CUST-901,Aarav Sharma,aarav.sharma@example.com,Consumer,India,Mumbai,Maharashtra,West,Office Supplies,Storage,Steel Archival Cabinet,1344.0,4,0.2,245.6,Debit Card,12.34
+ORD-2025-1001,2025-01-03,CUST-902,Priya Patel,priya.patel@sample.in,Corporate,India,Bengaluru,Karnataka,South,Furniture,Tables,Motorized Standing Desk,1224.0,2,0.1,158.8,Net Banking,9.0
+ORD-2025-1002,2025-01-05,CUST-903,Rohan Verma,rohan.v@fintech.org,Home Office,India,Delhi,Delhi,North,Office Supplies,Art,Graphics Drawing Tablet,1020.0,5,0.15,223.5,Net Banking,10.71
+ORD-2025-1003,2025-01-07,CUST-904,Ananya Iyer,ananya.iyer@retail.com,Consumer,India,Chennai,Tamil Nadu,South,Furniture,Bookcases,Modular 4-Tier Shelf,1520.0,5,0.05,237.0,UPI,33.88
+ORD-2025-1004,2025-01-09,CUST-905,Vikram Singh,vikram.singh@global.net,Corporate,India,Kolkata,West Bengal,East,Furniture,Bookcases,Modular 4-Tier Shelf,544.0,2,0.15,69.2,Debit Card,12.34
+ORD-2025-1005,2025-01-11,CUST-906,Sneha Reddy,sneha.reddy@techhub.io,Consumer,India,Hyderabad,Telangana,South,Office Supplies,Paper,Premium A4 Box,276.25,5,0.15,69.28,Net Banking,5.92
+ORD-2025-1006,2025-01-13,CUST-907,Karan Malhotra,karan.m@startups.in,Home Office,India,Pune,Maharashtra,West,Office Supplies,Paper,Premium A4 Box,221.0,4,0.15,55.42,UPI,19.65
+ORD-2025-1007,2025-01-15,CUST-908,Meera Joshi,meera.j@designstudio.org,Consumer,India,Ahmedabad,Gujarat,West,Technology,Accessories,Wireless Headphones ANC,676.6,4,0.15,149.25,Net Banking,28.7
+ORD-2025-1008,2025-01-17,CUST-909,Aditya Nair,aditya.nair@ventures.com,Corporate,India,Kochi,Kerala,South,Furniture,Tables,Motorized Standing Desk,1632.0,3,0.2,166.8,UPI,23.02
+ORD-2025-1009,2025-01-19,CUST-910,Pooja Gupta,pooja.g@enterprises.in,Home Office,India,Jaipur,Rajasthan,North,Furniture,Chairs,Ergonomic Office Chair,238.0,1,0.15,47.15,UPI,27.53
+ORD-2025-1010,2025-01-21,CUST-901,Aarav Sharma,aarav.sharma@example.com,Consumer,India,Mumbai,Maharashtra,West,Office Supplies,Appliances,Laser Duplex Printer,720.0,2,0.2,98.0,Debit Card,14.24
+ORD-2025-1011,2025-01-23,CUST-902,Priya Patel,priya.patel@sample.in,Corporate,India,Bengaluru,Karnataka,South,Office Supplies,Storage,Steel Archival Cabinet,1344.0,4,0.2,245.6,Net Banking,38.33
+ORD-2025-1012,2025-01-25,CUST-903,Rohan Verma,rohan.v@fintech.org,Home Office,India,Delhi,Delhi,North,Technology,Phones,Smart Phone Pro Max,3230.0,4,0.05,639.25,UPI,31.5
+ORD-2025-1013,2025-01-27,CUST-904,Ananya Iyer,ananya.iyer@retail.com,Consumer,India,Chennai,Tamil Nadu,South,Furniture,Bookcases,Modular 4-Tier Shelf,544.0,2,0.15,69.2,Net Banking,12.39
+ORD-2025-1014,2025-01-29,CUST-905,Vikram Singh,vikram.singh@global.net,Corporate,India,Kolkata,West Bengal,East,Technology,Laptops,Ultrabook 16GB RAM,2295.0,2,0.15,347.88,UPI,42.58
+ORD-2025-1015,2025-01-31,CUST-906,Sneha Reddy,sneha.reddy@techhub.io,Consumer,India,Hyderabad,Telangana,South,Furniture,Chairs,Ergonomic Office Chair,1120.0,4,0.0,260.0,Credit Card,43.45
+ORD-2025-1016,2025-02-02,CUST-907,Karan Malhotra,karan.m@startups.in,Home Office,India,Pune,Maharashtra,West,Technology,Laptops,Ultrabook 16GB RAM,6412.5,5,0.05,1139.69,Debit Card,43.61
+ORD-2025-1017,2025-02-04,CUST-908,Meera Joshi,meera.j@designstudio.org,Consumer,India,Ahmedabad,Gujarat,West,Office Supplies,Appliances,Laser Duplex Printer,1800.0,5,0.2,245.0,Net Banking,7.98
+ORD-2025-1018,2025-02-06,CUST-909,Aditya Nair,aditya.nair@ventures.com,Corporate,India,Kochi,Kerala,South,Office Supplies,Appliances,Laser Duplex Printer,382.5,1,0.15,56.31,Net Banking,16.74
+ORD-2025-1019,2025-02-08,CUST-910,Pooja Gupta,pooja.g@enterprises.in,Home Office,India,Jaipur,Rajasthan,North,Technology,Accessories,Wireless Headphones ANC,179.1,1,0.1,41.05,Net Banking,36.61
+ORD-2025-1020,2025-02-10,CUST-901,Aarav Sharma,aarav.sharma@example.com,Consumer,India,Mumbai,Maharashtra,West,Furniture,Tables,Motorized Standing Desk,1292.0,2,0.05,187.7,Net Banking,9.63
+ORD-2025-1021,2025-02-12,CUST-902,Priya Patel,priya.patel@sample.in,Corporate,India,Bengaluru,Karnataka,South,Office Supplies,Appliances,Laser Duplex Printer,1710.0,4,0.05,297.25,Net Banking,8.82
+ORD-2025-1022,2025-02-14,CUST-903,Rohan Verma,rohan.v@fintech.org,Home Office,India,Delhi,Delhi,North,Office Supplies,Storage,Steel Archival Cabinet,1890.0,5,0.1,380.5,UPI,28.65
+ORD-2025-1023,2025-02-16,CUST-904,Ananya Iyer,ananya.iyer@retail.com,Consumer,India,Chennai,Tamil Nadu,South,Technology,Accessories,Wireless Headphones ANC,179.1,1,0.1,41.05,UPI,9.78
+ORD-2025-1024,2025-02-18,CUST-905,Vikram Singh,vikram.singh@global.net,Corporate,India,Kolkata,West Bengal,East,Technology,Accessories,Wireless Headphones ANC,159.2,1,0.2,34.08,Net Banking,27.45
+ORD-2025-1025,2025-02-20,CUST-906,Sneha Reddy,sneha.reddy@techhub.io,Consumer,India,Hyderabad,Telangana,South,Office Supplies,Storage,Steel Archival Cabinet,1260.0,3,0.0,285.0,UPI,33.43
+ORD-2025-1026,2025-02-22,CUST-907,Karan Malhotra,karan.m@startups.in,Home Office,India,Pune,Maharashtra,West,Office Supplies,Paper,Premium A4 Box,208.0,4,0.2,51.2,Debit Card,13.07
+ORD-2025-1027,2025-02-24,CUST-908,Meera Joshi,meera.j@designstudio.org,Consumer,India,Ahmedabad,Gujarat,West,Office Supplies,Storage,Steel Archival Cabinet,357.0,1,0.15,68.22,Debit Card,27.53
+ORD-2025-1028,2025-02-26,CUST-909,Aditya Nair,aditya.nair@ventures.com,Corporate,India,Kochi,Kerala,South,Furniture,Tables,Motorized Standing Desk,3060.0,5,0.1,397.0,Credit Card,13.12
+ORD-2025-1029,2025-02-28,CUST-910,Pooja Gupta,pooja.g@enterprises.in,Home Office,India,Jaipur,Rajasthan,North,Office Supplies,Storage,Steel Archival Cabinet,1134.0,3,0.1,228.3,UPI,11.45
+ORD-2025-1030,2025-03-02,CUST-901,Aarav Sharma,aarav.sharma@example.com,Consumer,India,Mumbai,Maharashtra,West,Office Supplies,Paper,Premium A4 Box,325.0,5,0.0,90.0,Debit Card,9.22
+ORD-2025-1031,2025-03-04,CUST-902,Priya Patel,priya.patel@sample.in,Corporate,India,Bengaluru,Karnataka,South,Furniture,Chairs,Ergonomic Office Chair,798.0,3,0.05,175.05,Credit Card,9.88
+ORD-2025-1032,2025-03-06,CUST-903,Rohan Verma,rohan.v@fintech.org,Home Office,India,Delhi,Delhi,North,Office Supplies,Storage,Steel Archival Cabinet,420.0,1,0.0,95.0,UPI,14.12
+ORD-2025-1033,2025-03-08,CUST-904,Ananya Iyer,ananya.iyer@retail.com,Consumer,India,Chennai,Tamil Nadu,South,Office Supplies,Appliances,Laser Duplex Printer,1440.0,4,0.2,196.0,Net Banking,39.43
+ORD-2025-1034,2025-03-10,CUST-905,Vikram Singh,vikram.singh@global.net,Corporate,India,Kolkata,West Bengal,East,Furniture,Bookcases,Modular 4-Tier Shelf,960.0,3,0.0,165.0,Credit Card,24.39
+ORD-2025-1035,2025-03-12,CUST-906,Sneha Reddy,sneha.reddy@techhub.io,Consumer,India,Hyderabad,Telangana,South,Technology,Accessories,Wireless Headphones ANC,338.3,2,0.15,74.63,Net Banking,14.77
+ORD-2025-1036,2025-03-14,CUST-907,Karan Malhotra,karan.m@startups.in,Home Office,India,Pune,Maharashtra,West,Furniture,Bookcases,Modular 4-Tier Shelf,272.0,1,0.15,34.6,Credit Card,19.55
+ORD-2025-1037,2025-03-16,CUST-908,Meera Joshi,meera.j@designstudio.org,Consumer,India,Ahmedabad,Gujarat,West,Office Supplies,Paper,Premium A4 Box,221.0,4,0.15,55.42,UPI,15.07
+ORD-2025-1038,2025-03-18,CUST-909,Aditya Nair,aditya.nair@ventures.com,Corporate,India,Kochi,Kerala,South,Technology,Accessories,Wireless Headphones ANC,159.2,1,0.2,34.08,Credit Card,16.39
+ORD-2025-1039,2025-03-20,CUST-910,Pooja Gupta,pooja.g@enterprises.in,Home Office,India,Jaipur,Rajasthan,North,Technology,Phones,Smart Phone Pro Max,1615.0,2,0.05,319.62,Net Banking,21.44
+ORD-2025-1040,2025-03-22,CUST-901,Aarav Sharma,aarav.sharma@example.com,Consumer,India,Mumbai,Maharashtra,West,Furniture,Tables,Motorized Standing Desk,680.0,1,0.0,110.0,UPI,14.58
+ORD-2025-1041,2025-03-24,CUST-902,Priya Patel,priya.patel@sample.in,Corporate,India,Bengaluru,Karnataka,South,Furniture,Tables,Motorized Standing Desk,2584.0,4,0.05,375.4,Debit Card,44.43
+ORD-2025-1042,2025-03-26,CUST-903,Rohan Verma,rohan.v@fintech.org,Home Office,India,Delhi,Delhi,North,Office Supplies,Storage,Steel Archival Cabinet,1512.0,4,0.1,304.4,Credit Card,19.79
+ORD-2025-1043,2025-03-28,CUST-904,Ananya Iyer,ananya.iyer@retail.com,Consumer,India,Chennai,Tamil Nadu,South,Furniture,Bookcases,Modular 4-Tier Shelf,1360.0,5,0.15,173.0,UPI,44.34
+ORD-2025-1044,2025-03-30,CUST-905,Vikram Singh,vikram.singh@global.net,Corporate,India,Kolkata,West Bengal,East,Technology,Phones,Smart Phone Pro Max,722.5,1,0.15,125.81,Debit Card,25.33
+ORD-2025-1045,2025-04-01,CUST-906,Sneha Reddy,sneha.reddy@techhub.io,Consumer,India,Hyderabad,Telangana,South,Technology,Accessories,Wireless Headphones ANC,676.6,4,0.15,149.25,Net Banking,32.1
+ORD-2025-1046,2025-04-03,CUST-907,Karan Malhotra,karan.m@startups.in,Home Office,India,Pune,Maharashtra,West,Office Supplies,Paper,Premium A4 Box,175.5,3,0.1,45.23,Net Banking,18.95
+ORD-2025-1047,2025-04-05,CUST-908,Meera Joshi,meera.j@designstudio.org,Consumer,India,Ahmedabad,Gujarat,West,Furniture,Chairs,Ergonomic Office Chair,280.0,1,0.0,65.0,Net Banking,20.9
+ORD-2025-1048,2025-04-07,CUST-909,Aditya Nair,aditya.nair@ventures.com,Corporate,India,Kochi,Kerala,South,Technology,Laptops,Ultrabook 16GB RAM,1215.0,1,0.1,199.25,Credit Card,18.64
+ORD-2025-1049,2025-04-09,CUST-910,Pooja Gupta,pooja.g@enterprises.in,Home Office,India,Jaipur,Rajasthan,North,Technology,Laptops,Ultrabook 16GB RAM,2430.0,2,0.1,398.5,Debit Card,14.14
+ORD-2025-1050,2025-04-11,CUST-901,Aarav Sharma,aarav.sharma@example.com,Consumer,India,Mumbai,Maharashtra,West,Office Supplies,Paper,Premium A4 Box,55.25,1,0.15,13.86,UPI,26.19
+ORD-2025-1051,2025-04-13,CUST-902,Priya Patel,priya.patel@sample.in,Corporate,India,Bengaluru,Karnataka,South,Technology,Phones,Smart Phone Pro Max,2720.0,4,0.2,448.0,Net Banking,41.02
+ORD-2025-1052,2025-04-15,CUST-903,Rohan Verma,rohan.v@fintech.org,Home Office,India,Delhi,Delhi,North,Office Supplies,Storage,Steel Archival Cabinet,420.0,1,0.0,95.0,Debit Card,18.97
+ORD-2025-1053,2025-04-17,CUST-904,Ananya Iyer,ananya.iyer@retail.com,Consumer,India,Chennai,Tamil Nadu,South,Technology,Accessories,Wireless Headphones ANC,796.0,4,0.0,200.0,Net Banking,30.68
+ORD-2025-1054,2025-04-19,CUST-905,Vikram Singh,vikram.singh@global.net,Corporate,India,Kolkata,West Bengal,East,Technology,Phones,Smart Phone Pro Max,2890.0,4,0.15,503.25,Debit Card,28.23
+ORD-2025-1055,2025-04-21,CUST-906,Sneha Reddy,sneha.reddy@techhub.io,Consumer,India,Hyderabad,Telangana,South,Office Supplies,Appliances,Laser Duplex Printer,1350.0,3,0.0,255.0,Debit Card,5.2
+ORD-2025-1056,2025-04-23,CUST-907,Karan Malhotra,karan.m@startups.in,Home Office,India,Pune,Maharashtra,West,Technology,Laptops,Ultrabook 16GB RAM,2430.0,2,0.1,398.5,Credit Card,31.08
+ORD-2025-1057,2025-04-25,CUST-908,Meera Joshi,meera.j@designstudio.org,Consumer,India,Ahmedabad,Gujarat,West,Furniture,Chairs,Ergonomic Office Chair,238.0,1,0.15,47.15,Credit Card,14.49
+ORD-2025-1058,2025-04-27,CUST-909,Aditya Nair,aditya.nair@ventures.com,Corporate,India,Kochi,Kerala,South,Furniture,Chairs,Ergonomic Office Chair,840.0,3,0.0,195.0,Debit Card,17.32
+ORD-2025-1059,2025-04-29,CUST-910,Pooja Gupta,pooja.g@enterprises.in,Home Office,India,Jaipur,Rajasthan,North,Technology,Accessories,Wireless Headphones ANC,895.5,5,0.1,205.22,Net Banking,40.68
+ORD-2025-1060,2025-05-01,CUST-901,Aarav Sharma,aarav.sharma@example.com,Consumer,India,Mumbai,Maharashtra,West,Technology,Laptops,Ultrabook 16GB RAM,6750.0,5,0.0,1300.0,Debit Card,28.08
+ORD-2025-1061,2025-05-03,CUST-902,Priya Patel,priya.patel@sample.in,Corporate,India,Bengaluru,Karnataka,South,Technology,Phones,Smart Phone Pro Max,3612.5,5,0.15,629.06,Net Banking,33.9
+ORD-2025-1062,2025-05-05,CUST-903,Rohan Verma,rohan.v@fintech.org,Home Office,India,Delhi,Delhi,North,Furniture,Chairs,Ergonomic Office Chair,840.0,3,0.0,195.0,Debit Card,6.74
+ORD-2025-1063,2025-05-07,CUST-904,Ananya Iyer,ananya.iyer@retail.com,Consumer,India,Chennai,Tamil Nadu,South,Furniture,Tables,Motorized Standing Desk,1734.0,3,0.15,199.95,Debit Card,5.62
+ORD-2025-1064,2025-05-09,CUST-905,Vikram Singh,vikram.singh@global.net,Corporate,India,Kolkata,West Bengal,East,Technology,Phones,Smart Phone Pro Max,3825.0,5,0.1,708.75,Debit Card,44.21
+ORD-2025-1065,2025-05-11,CUST-906,Sneha Reddy,sneha.reddy@techhub.io,Consumer,India,Hyderabad,Telangana,South,Furniture,Tables,Motorized Standing Desk,612.0,1,0.1,79.4,Credit Card,11.78
+ORD-2025-1066,2025-05-13,CUST-907,Karan Malhotra,karan.m@startups.in,Home Office,India,Pune,Maharashtra,West,Office Supplies,Paper,Premium A4 Box,117.0,2,0.1,30.15,Debit Card,27.8
+ORD-2025-1067,2025-05-15,CUST-908,Meera Joshi,meera.j@designstudio.org,Consumer,India,Ahmedabad,Gujarat,West,Technology,Laptops,Ultrabook 16GB RAM,2430.0,2,0.1,398.5,UPI,16.81
+ORD-2025-1068,2025-05-17,CUST-909,Aditya Nair,aditya.nair@ventures.com,Corporate,India,Kochi,Kerala,South,Technology,Phones,Smart Phone Pro Max,850.0,1,0.0,180.0,Debit Card,33.1
+ORD-2025-1069,2025-05-19,CUST-910,Pooja Gupta,pooja.g@enterprises.in,Home Office,India,Jaipur,Rajasthan,North,Office Supplies,Storage,Steel Archival Cabinet,1995.0,5,0.05,425.12,Net Banking,37.37
+ORD-2025-1070,2025-05-21,CUST-901,Aarav Sharma,aarav.sharma@example.com,Consumer,India,Mumbai,Maharashtra,West,Technology,Laptops,Ultrabook 16GB RAM,1080.0,1,0.2,152.0,Net Banking,8.26
+ORD-2025-1071,2025-05-23,CUST-902,Priya Patel,priya.patel@sample.in,Corporate,India,Bengaluru,Karnataka,South,Office Supplies,Appliances,Laser Duplex Printer,1440.0,4,0.2,196.0,Debit Card,12.77
+ORD-2025-1072,2025-05-25,CUST-903,Rohan Verma,rohan.v@fintech.org,Home Office,India,Delhi,Delhi,North,Technology,Accessories,Wireless Headphones ANC,756.2,4,0.05,181.09,Net Banking,8.76
+ORD-2025-1073,2025-05-27,CUST-904,Ananya Iyer,ananya.iyer@retail.com,Consumer,India,Chennai,Tamil Nadu,South,Furniture,Bookcases,Modular 4-Tier Shelf,960.0,3,0.0,165.0,UPI,11.2
+ORD-2025-1074,2025-05-29,CUST-905,Vikram Singh,vikram.singh@global.net,Corporate,India,Kolkata,West Bengal,East,Furniture,Bookcases,Modular 4-Tier Shelf,608.0,2,0.05,94.8,Debit Card,6.22
+ORD-2025-1075,2025-05-31,CUST-906,Sneha Reddy,sneha.reddy@techhub.io,Consumer,India,Hyderabad,Telangana,South,Office Supplies,Paper,Premium A4 Box,165.75,3,0.15,41.57,Debit Card,18.07
+ORD-2025-1076,2025-06-02,CUST-907,Karan Malhotra,karan.m@startups.in,Home Office,India,Pune,Maharashtra,West,Furniture,Tables,Motorized Standing Desk,2312.0,4,0.15,266.6,Net Banking,43.61
+ORD-2025-1077,2025-06-04,CUST-908,Meera Joshi,meera.j@designstudio.org,Consumer,India,Ahmedabad,Gujarat,West,Furniture,Chairs,Ergonomic Office Chair,1190.0,5,0.15,235.75,Net Banking,21.45
+ORD-2025-1078,2025-06-06,CUST-909,Aditya Nair,aditya.nair@ventures.com,Corporate,India,Kochi,Kerala,South,Office Supplies,Storage,Steel Archival Cabinet,1344.0,4,0.2,245.6,UPI,43.78
+ORD-2025-1079,2025-06-08,CUST-910,Pooja Gupta,pooja.g@enterprises.in,Home Office,India,Jaipur,Rajasthan,North,Technology,Accessories,Wireless Headphones ANC,179.1,1,0.1,41.05,Net Banking,22.56
+ORD-2025-1080,2025-06-10,CUST-901,Aarav Sharma,aarav.sharma@example.com,Consumer,India,Mumbai,Maharashtra,West,Office Supplies,Paper,Premium A4 Box,308.75,5,0.05,82.28,Net Banking,43.51
+ORD-2025-1081,2025-06-12,CUST-902,Priya Patel,priya.patel@sample.in,Corporate,India,Bengaluru,Karnataka,South,Office Supplies,Appliances,Laser Duplex Printer,1440.0,4,0.2,196.0,UPI,7.33
+ORD-2025-1082,2025-06-14,CUST-903,Rohan Verma,rohan.v@fintech.org,Home Office,India,Delhi,Delhi,North,Technology,Phones,Smart Phone Pro Max,1700.0,2,0.0,360.0,Credit Card,31.41
+ORD-2025-1083,2025-06-16,CUST-904,Ananya Iyer,ananya.iyer@retail.com,Consumer,India,Chennai,Tamil Nadu,South,Technology,Phones,Smart Phone Pro Max,3400.0,5,0.2,560.0,Net Banking,29.47
+ORD-2025-1084,2025-06-18,CUST-905,Vikram Singh,vikram.singh@global.net,Corporate,India,Kolkata,West Bengal,East,Technology,Accessories,Wireless Headphones ANC,756.2,4,0.05,181.09,Credit Card,19.24
+ORD-2025-1085,2025-06-20,CUST-906,Sneha Reddy,sneha.reddy@techhub.io,Consumer,India,Hyderabad,Telangana,South,Furniture,Bookcases,Modular 4-Tier Shelf,256.0,1,0.2,29.4,Credit Card,9.64
+ORD-2025-1086,2025-06-22,CUST-907,Karan Malhotra,karan.m@startups.in,Home Office,India,Pune,Maharashtra,West,Technology,Phones,Smart Phone Pro Max,2720.0,4,0.2,448.0,UPI,23.97
+ORD-2025-1087,2025-06-24,CUST-908,Meera Joshi,meera.j@designstudio.org,Consumer,India,Ahmedabad,Gujarat,West,Office Supplies,Paper,Premium A4 Box,276.25,5,0.15,69.28,UPI,11.93
+ORD-2025-1088,2025-06-26,CUST-909,Aditya Nair,aditya.nair@ventures.com,Corporate,India,Kochi,Kerala,South,Furniture,Tables,Motorized Standing Desk,1292.0,2,0.05,187.7,Debit Card,42.97
+ORD-2025-1089,2025-06-28,CUST-910,Pooja Gupta,pooja.g@enterprises.in,Home Office,India,Jaipur,Rajasthan,North,Technology,Laptops,Ultrabook 16GB RAM,5130.0,4,0.05,911.75,UPI,30.03
+ORD-2025-1090,2025-06-30,CUST-901,Aarav Sharma,aarav.sharma@example.com,Consumer,India,Mumbai,Maharashtra,West,Technology,Phones,Smart Phone Pro Max,3400.0,5,0.2,560.0,Debit Card,11.52
+ORD-2025-1091,2025-07-02,CUST-902,Priya Patel,priya.patel@sample.in,Corporate,India,Bengaluru,Karnataka,South,Office Supplies,Storage,Steel Archival Cabinet,840.0,2,0.0,190.0,Debit Card,39.69
+ORD-2025-1092,2025-07-04,CUST-903,Rohan Verma,rohan.v@fintech.org,Home Office,India,Delhi,Delhi,North,Furniture,Chairs,Ergonomic Office Chair,1064.0,4,0.05,233.4,Credit Card,27.93
+ORD-2025-1093,2025-07-06,CUST-904,Ananya Iyer,ananya.iyer@retail.com,Consumer,India,Chennai,Tamil Nadu,South,Technology,Phones,Smart Phone Pro Max,3825.0,5,0.1,708.75,Debit Card,37.83
+ORD-2025-1094,2025-07-08,CUST-905,Vikram Singh,vikram.singh@global.net,Corporate,India,Kolkata,West Bengal,East,Technology,Accessories,Wireless Headphones ANC,199.0,1,0.0,50.0,Net Banking,31.06
+ORD-2025-1095,2025-07-10,CUST-906,Sneha Reddy,sneha.reddy@techhub.io,Consumer,India,Hyderabad,Telangana,South,Technology,Laptops,Ultrabook 16GB RAM,6075.0,5,0.1,996.25,Net Banking,29.73
+ORD-2025-1096,2025-07-12,CUST-907,Karan Malhotra,karan.m@startups.in,Home Office,India,Pune,Maharashtra,West,Technology,Phones,Smart Phone Pro Max,1360.0,2,0.2,224.0,UPI,38.8
+ORD-2025-1097,2025-07-14,CUST-908,Meera Joshi,meera.j@designstudio.org,Consumer,India,Ahmedabad,Gujarat,West,Technology,Laptops,Ultrabook 16GB RAM,4050.0,3,0.0,780.0,UPI,24.84
+ORD-2025-1098,2025-07-16,CUST-909,Aditya Nair,aditya.nair@ventures.com,Corporate,India,Kochi,Kerala,South,Furniture,Tables,Motorized Standing Desk,1088.0,2,0.2,111.2,Debit Card,42.47
+ORD-2025-1099,2025-07-18,CUST-910,Pooja Gupta,pooja.g@enterprises.in,Home Office,India,Jaipur,Rajasthan,North,Furniture,Chairs,Ergonomic Office Chair,224.0,1,0.2,42.6,Debit Card,43.7
+ORD-2025-1100,2025-07-20,CUST-901,Aarav Sharma,aarav.sharma@example.com,Consumer,India,Mumbai,Maharashtra,West,Office Supplies,Paper,Premium A4 Box,325.0,5,0.0,90.0,Net Banking,27.74
+ORD-2025-1101,2025-07-22,CUST-902,Priya Patel,priya.patel@sample.in,Corporate,India,Bengaluru,Karnataka,South,Technology,Phones,Smart Phone Pro Max,2167.5,3,0.15,377.44,Net Banking,19.88
+ORD-2025-1102,2025-07-24,CUST-903,Rohan Verma,rohan.v@fintech.org,Home Office,India,Delhi,Delhi,North,Office Supplies,Art,Graphics Drawing Tablet,1020.0,5,0.15,223.5,Credit Card,22.16
+ORD-2025-1103,2025-07-26,CUST-904,Ananya Iyer,ananya.iyer@retail.com,Consumer,India,Chennai,Tamil Nadu,South,Office Supplies,Storage,Steel Archival Cabinet,378.0,1,0.1,76.1,Credit Card,9.12
+ORD-2025-1104,2025-07-28,CUST-905,Vikram Singh,vikram.singh@global.net,Corporate,India,Kolkata,West Bengal,East,Technology,Phones,Smart Phone Pro Max,3400.0,4,0.0,720.0,Net Banking,17.8
+ORD-2025-1105,2025-07-30,CUST-906,Sneha Reddy,sneha.reddy@techhub.io,Consumer,India,Hyderabad,Telangana,South,Technology,Accessories,Wireless Headphones ANC,169.15,1,0.15,37.31,Credit Card,5.43
+ORD-2025-1106,2025-08-01,CUST-907,Karan Malhotra,karan.m@startups.in,Home Office,India,Pune,Maharashtra,West,Technology,Accessories,Wireless Headphones ANC,796.0,4,0.0,200.0,UPI,17.77
+ORD-2025-1107,2025-08-03,CUST-908,Meera Joshi,meera.j@designstudio.org,Consumer,India,Ahmedabad,Gujarat,West,Furniture,Chairs,Ergonomic Office Chair,798.0,3,0.05,175.05,Credit Card,30.27
+ORD-2025-1108,2025-08-05,CUST-909,Aditya Nair,aditya.nair@ventures.com,Corporate,India,Kochi,Kerala,South,Furniture,Tables,Motorized Standing Desk,1734.0,3,0.15,199.95,Net Banking,18.15
+ORD-2025-1109,2025-08-07,CUST-910,Pooja Gupta,pooja.g@enterprises.in,Home Office,India,Jaipur,Rajasthan,North,Furniture,Tables,Motorized Standing Desk,2176.0,4,0.2,222.4,Credit Card,36.66
+ORD-2025-1110,2025-08-09,CUST-901,Aarav Sharma,aarav.sharma@example.com,Consumer,India,Mumbai,Maharashtra,West,Office Supplies,Storage,Steel Archival Cabinet,1680.0,5,0.2,307.0,Net Banking,24.78
+ORD-2025-1111,2025-08-11,CUST-902,Priya Patel,priya.patel@sample.in,Corporate,India,Bengaluru,Karnataka,South,Office Supplies,Paper,Premium A4 Box,292.5,5,0.1,75.38,Net Banking,40.51
+ORD-2025-1112,2025-08-13,CUST-903,Rohan Verma,rohan.v@fintech.org,Home Office,India,Delhi,Delhi,North,Technology,Laptops,Ultrabook 16GB RAM,5400.0,4,0.0,1040.0,Debit Card,35.46
+ORD-2025-1113,2025-08-15,CUST-904,Ananya Iyer,ananya.iyer@retail.com,Consumer,India,Chennai,Tamil Nadu,South,Technology,Phones,Smart Phone Pro Max,3400.0,5,0.2,560.0,Credit Card,13.9
+ORD-2025-1114,2025-08-17,CUST-905,Vikram Singh,vikram.singh@global.net,Corporate,India,Kolkata,West Bengal,East,Technology,Laptops,Ultrabook 16GB RAM,3847.5,3,0.05,683.81,Credit Card,10.86
+ORD-2025-1115,2025-08-19,CUST-906,Sneha Reddy,sneha.reddy@techhub.io,Consumer,India,Hyderabad,Telangana,South,Furniture,Tables,Motorized Standing Desk,1632.0,3,0.2,166.8,Debit Card,19.83
+ORD-2025-1116,2025-08-21,CUST-907,Karan Malhotra,karan.m@startups.in,Home Office,India,Pune,Maharashtra,West,Technology,Phones,Smart Phone Pro Max,680.0,1,0.2,112.0,UPI,35.14
+ORD-2025-1117,2025-08-23,CUST-908,Meera Joshi,meera.j@designstudio.org,Consumer,India,Ahmedabad,Gujarat,West,Technology,Accessories,Wireless Headphones ANC,845.75,5,0.15,186.57,Net Banking,27.34
+ORD-2025-1118,2025-08-25,CUST-909,Aditya Nair,aditya.nair@ventures.com,Corporate,India,Kochi,Kerala,South,Office Supplies,Paper,Premium A4 Box,117.0,2,0.1,30.15,Net Banking,9.45
+ORD-2025-1119,2025-08-27,CUST-910,Pooja Gupta,pooja.g@enterprises.in,Home Office,India,Jaipur,Rajasthan,North,Technology,Laptops,Ultrabook 16GB RAM,5130.0,4,0.05,911.75,Debit Card,34.64
+ORD-2025-1120,2025-08-29,CUST-901,Aarav Sharma,aarav.sharma@example.com,Consumer,India,Mumbai,Maharashtra,West,Office Supplies,Appliances,Laser Duplex Printer,405.0,1,0.1,64.75,UPI,28.33
+ORD-2025-1121,2025-08-31,CUST-902,Priya Patel,priya.patel@sample.in,Corporate,India,Bengaluru,Karnataka,South,Office Supplies,Appliances,Laser Duplex Printer,1800.0,4,0.0,340.0,Credit Card,8.32
+ORD-2025-1122,2025-09-02,CUST-903,Rohan Verma,rohan.v@fintech.org,Home Office,India,Delhi,Delhi,North,Furniture,Bookcases,Modular 4-Tier Shelf,1520.0,5,0.05,237.0,Debit Card,5.49
+ORD-2025-1123,2025-09-04,CUST-904,Ananya Iyer,ananya.iyer@retail.com,Consumer,India,Chennai,Tamil Nadu,South,Furniture,Tables,Motorized Standing Desk,3060.0,5,0.1,397.0,Debit Card,41.76
+ORD-2025-1124,2025-09-06,CUST-905,Vikram Singh,vikram.singh@global.net,Corporate,India,Kolkata,West Bengal,East,Technology,Accessories,Wireless Headphones ANC,507.45,3,0.15,111.94,Net Banking,8.02
+ORD-2025-1125,2025-09-08,CUST-906,Sneha Reddy,sneha.reddy@techhub.io,Consumer,India,Hyderabad,Telangana,South,Office Supplies,Appliances,Laser Duplex Printer,450.0,1,0.0,85.0,UPI,30.1
+ORD-2025-1126,2025-09-10,CUST-907,Karan Malhotra,karan.m@startups.in,Home Office,India,Pune,Maharashtra,West,Technology,Accessories,Wireless Headphones ANC,179.1,1,0.1,41.05,Debit Card,16.24
+ORD-2025-1127,2025-09-12,CUST-908,Meera Joshi,meera.j@designstudio.org,Consumer,India,Ahmedabad,Gujarat,West,Office Supplies,Art,Graphics Drawing Tablet,816.0,4,0.15,178.8,UPI,18.43
+ORD-2025-1128,2025-09-14,CUST-909,Aditya Nair,aditya.nair@ventures.com,Corporate,India,Kochi,Kerala,South,Furniture,Chairs,Ergonomic Office Chair,532.0,2,0.05,116.7,Debit Card,14.18
+ORD-2025-1129,2025-09-16,CUST-910,Pooja Gupta,pooja.g@enterprises.in,Home Office,India,Jaipur,Rajasthan,North,Furniture,Tables,Motorized Standing Desk,578.0,1,0.15,66.65,UPI,44.45
+ORD-2025-1130,2025-09-18,CUST-901,Aarav Sharma,aarav.sharma@example.com,Consumer,India,Mumbai,Maharashtra,West,Technology,Phones,Smart Phone Pro Max,850.0,1,0.0,180.0,Credit Card,21.45
+ORD-2025-1131,2025-09-20,CUST-902,Priya Patel,priya.patel@sample.in,Corporate,India,Bengaluru,Karnataka,South,Technology,Accessories,Wireless Headphones ANC,945.25,5,0.05,226.37,Credit Card,21.67
+ORD-2025-1132,2025-09-22,CUST-903,Rohan Verma,rohan.v@fintech.org,Home Office,India,Delhi,Delhi,North,Office Supplies,Appliances,Laser Duplex Printer,855.0,2,0.05,148.62,UPI,42.31
+ORD-2025-1133,2025-09-24,CUST-904,Ananya Iyer,ananya.iyer@retail.com,Consumer,India,Chennai,Tamil Nadu,South,Furniture,Tables,Motorized Standing Desk,680.0,1,0.0,110.0,Net Banking,24.21
+ORD-2025-1134,2025-09-26,CUST-905,Vikram Singh,vikram.singh@global.net,Corporate,India,Kolkata,West Bengal,East,Technology,Phones,Smart Phone Pro Max,2040.0,3,0.2,336.0,Credit Card,34.98
+ORD-2025-1135,2025-09-28,CUST-906,Sneha Reddy,sneha.reddy@techhub.io,Consumer,India,Hyderabad,Telangana,South,Furniture,Bookcases,Modular 4-Tier Shelf,864.0,3,0.1,121.8,Credit Card,27.76
+ORD-2025-1136,2025-09-30,CUST-907,Karan Malhotra,karan.m@startups.in,Home Office,India,Pune,Maharashtra,West,Technology,Laptops,Ultrabook 16GB RAM,1215.0,1,0.1,199.25,Credit Card,10.35
+ORD-2025-1137,2025-10-02,CUST-908,Meera Joshi,meera.j@designstudio.org,Consumer,India,Ahmedabad,Gujarat,West,Office Supplies,Storage,Steel Archival Cabinet,1680.0,4,0.0,380.0,Credit Card,26.37
+ORD-2025-1138,2025-10-04,CUST-909,Aditya Nair,aditya.nair@ventures.com,Corporate,India,Kochi,Kerala,South,Furniture,Bookcases,Modular 4-Tier Shelf,768.0,3,0.2,88.2,Credit Card,28.41
+ORD-2025-1139,2025-10-06,CUST-910,Pooja Gupta,pooja.g@enterprises.in,Home Office,India,Jaipur,Rajasthan,North,Furniture,Tables,Motorized Standing Desk,1292.0,2,0.05,187.7,Credit Card,20.11
+ORD-2025-1140,2025-10-08,CUST-901,Aarav Sharma,aarav.sharma@example.com,Consumer,India,Mumbai,Maharashtra,West,Office Supplies,Appliances,Laser Duplex Printer,405.0,1,0.1,64.75,Debit Card,15.99
+ORD-2025-1141,2025-10-10,CUST-902,Priya Patel,priya.patel@sample.in,Corporate,India,Bengaluru,Karnataka,South,Technology,Phones,Smart Phone Pro Max,807.5,1,0.05,159.81,Debit Card,19.33
+ORD-2025-1142,2025-10-12,CUST-903,Rohan Verma,rohan.v@fintech.org,Home Office,India,Delhi,Delhi,North,Office Supplies,Storage,Steel Archival Cabinet,798.0,2,0.05,170.05,UPI,25.81
+ORD-2025-1143,2025-10-14,CUST-904,Ananya Iyer,ananya.iyer@retail.com,Consumer,India,Chennai,Tamil Nadu,South,Technology,Accessories,Wireless Headphones ANC,567.15,3,0.05,135.82,UPI,39.09
+ORD-2025-1144,2025-10-16,CUST-905,Vikram Singh,vikram.singh@global.net,Corporate,India,Kolkata,West Bengal,East,Furniture,Tables,Motorized Standing Desk,2040.0,3,0.0,330.0,Net Banking,28.6
+ORD-2025-1145,2025-10-18,CUST-906,Sneha Reddy,sneha.reddy@techhub.io,Consumer,India,Hyderabad,Telangana,South,Office Supplies,Storage,Steel Archival Cabinet,1680.0,5,0.2,307.0,Net Banking,30.57
+ORD-2025-1146,2025-10-20,CUST-907,Karan Malhotra,karan.m@startups.in,Home Office,India,Pune,Maharashtra,West,Technology,Accessories,Wireless Headphones ANC,756.2,4,0.05,181.09,UPI,19.02
+ORD-2025-1147,2025-10-22,CUST-908,Meera Joshi,meera.j@designstudio.org,Consumer,India,Ahmedabad,Gujarat,West,Technology,Laptops,Ultrabook 16GB RAM,3645.0,3,0.1,597.75,Debit Card,41.17
+ORD-2025-1148,2025-10-24,CUST-909,Aditya Nair,aditya.nair@ventures.com,Corporate,India,Kochi,Kerala,South,Office Supplies,Appliances,Laser Duplex Printer,382.5,1,0.15,56.31,UPI,16.92
+ORD-2025-1149,2025-10-26,CUST-910,Pooja Gupta,pooja.g@enterprises.in,Home Office,India,Jaipur,Rajasthan,North,Technology,Accessories,Wireless Headphones ANC,159.2,1,0.2,34.08,UPI,36.86

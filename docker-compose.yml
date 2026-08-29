@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  dataos-core:
+    build: .
+    container_name: dataos_platform
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV=production
+      - HOST=0.0.0.0
+      - PORT=8000
+    volumes:
+      - ./storage:/app/storage
+      - ./data:/app/data
+    restart: unless-stopped
